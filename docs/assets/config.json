@@ -1,10 +1,14 @@
 {
-	"apiEndpoint": "https://testnet-service.lisk.io/api/v2/",
+	"apiEndpoint": "https://mainnet-service.lisk.io/api/v2/",
 	"interactive": true,
-	"delegateName": "dakk",
-	"sharingPercentage": 15,
-	"minPayout": 0.1,
+	"network": "mainnet",
+	"delegateName": "phinx",
+	"fromAddress": "lsk4x65qw62vopzo69tr8kprmnhc823pcudw6nkqa",
+	"sharingPercentage": 1,
+	"minPayout": 0.01,
 	"blackList": [],
 	"poolState": "poollogs.json",
-	"paymentsFile": "payments.sh"
+	"paymentsFile": "payments.sh",
+	"includeSelfStake": false,
+	"multiSignature": false
 }
