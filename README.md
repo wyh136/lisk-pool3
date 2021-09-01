@@ -1,17 +1,22 @@
 # Lisk pool distribution software (v3)
 
+![Test](https://github.com/dakk/lisk-pool3/actions/workflows/python-app.yml/badge.svg)
+
+
 Redistribution software for Lisk delegate on mainnet (and testnet) after the migration to Lisk3. 
 
 **Still WIP, use at your own risk***
+
+
 ## Configuration
 Fork this repo; edit config.json and modify the first lines with your settings:
 
 ```js
 {
-	"apiEndpoint": "https://mainnet-service.lisk.io/api/v2/",   // Node uri
-	"network": "mainnet",					    // Or mainnet
+	"apiEndpoint": "https://service.lisk.io/api/v2/",   		// Node uri
+	"network": "mainnet",									    // Or testnet
 	"interactive": true,                                        // Ask for confirmation
-	"delegateName": "phinx",                                     // Delegate name      
+	"delegateName": "dakk",                                     // Delegate name      
 	"sharingPercentage": 15,                                    // % of sharing
 	"minPayout": 0.1,                                           // Minimum payout
 	"blackList": [],                                            // Addresses to skip
@@ -45,8 +50,10 @@ npm install
 And update with:
 
 ```bash
-bash update_frontend.sh
+bash update_frontend.sh [base_directory]
 ```
+
+Where base directory is the base directory of the frontend (leave blank if it stays in the toplevel).
 
 
 ## License
