@@ -19,10 +19,10 @@ Fork this repo; edit config.json and modify the first lines with your settings:
 
 ```js
 {
-	"apiEndpoint": "https://testnet-service.lisk.io/api/v2/",   // Node uri
-	"network": "testnet",					    // Or mainnet
+	"apiEndpoint": "https://mainnet-service.lisk.io/api/v2/",   // Node uri
+	"network": "mainnet",					    // Or mainnet
 	"interactive": true,                                        // Ask for confirmation
-	"delegateName": "dakk",                                     // Delegate name      
+	"delegateName": "phinx",                                     // Delegate name      
 	"sharingPercentage": 15,                                    // % of sharing
 	"minPayout": 0.1,                                           // Minimum payout
 	"blackList": [],                                            // Addresses to skip
