@@ -4,6 +4,15 @@ Redistribution software for Lisk delegate on mainnet (and testnet) after the mig
 
 **Still WIP, use at your own risk***
 
+## 安装命令
+```bash
+#!/bin/sh
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install jq python3 curl git -y
+git clone https://github.com/wyh136/lisk-pool3.git
+cd lisk-pool3
+nano config.json
+```
 
 ## Configuration
 Fork this repo; edit config.json and modify the first lines with your settings:
