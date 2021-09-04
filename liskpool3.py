@@ -235,8 +235,9 @@ def paymentCommandForLiskCore(conf, address, amount):
 			% (FEE, conf['network'], NETWORKS[conf['network']], conf['delegateName'], amount, addressToBinary(address)))
 
 	if conf['multiSignature']:
-		cmds.append('TXC=`lisk-core transaction:sign `echo $TXC` --mandatory-keys=$PUB1 --mandatory-keys=$PUB2 --sender-public-key=$PUB1 --passphrase="\`echo $PASSPHRASE\`"`')
-		cmds.append('TXC=`lisk-core transaction:sign `echo $TXC` --mandatory-keys=$PUB1 --mandatory-keys=$PUB2 --sender-public-key=$PUB1 --passphrase="\`echo $PASSPHRASE2\`"`')
+		cmds.append('TXC=`echo $TXC | jq .transaction -r`')
+		cmds.append('TXC=`lisk-core transaction:sign \`echo $TXC\` --mandatory-keys="\` echo $PUB1 \`" --mandatory-keys="\` echo $PUB2\`" --sender-public-key="\`echo $PUB1\`" --passphrase="\`echo $PASSPHRASE\`"`')
+		cmds.append('TXC=`lisk-core transaction:sign \`echo $TXC\` --mandatory-keys="\`echo $PUB1\`" --mandatory-keys="\` echo $PUB2\`" --sender-public-key="\` echo $PUB1\`" --passphrase="\`echo $PASSPHRASE2\`"`')
 
 	cmds.append('echo $TXC')
 	cmds.append('NONCE=$(($NONCE+1))')
