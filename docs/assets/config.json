@@ -1,14 +1,14 @@
 {
-	"apiEndpoint": "https://mainnet-service.lisk.io/api/v2/",
+	"apiEndpoint": "https://service.lisk.io/api/v2/",
 	"interactive": true,
 	"network": "mainnet",
 	"delegateName": "phinx",
-	"fromAddress": "lsk4x65qw62vopzo69tr8kprmnhc823pcudw6nkqa",
-	"sharingPercentage": 1,
+	"sharingPercentage": 30,
 	"minPayout": 0.01,
 	"blackList": [],
 	"poolState": "poollogs.json",
 	"paymentsFile": "payments.sh",
 	"includeSelfStake": false,
-	"multiSignature": false
+	"multiSignature": false,
+	"fromAddress" : "lsk4x65qw62vopzo69tr8kprmnhc823pcudw6nkqa"
 }
