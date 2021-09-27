@@ -1,6 +1,6 @@
 {
 	"apiEndpoint": "https://service.lisk.io/api/v2/",
-	"interactive": true,
+	"interactive": false,
 	"network": "mainnet",
 	"delegateName": "phinx",
 	"sharingPercentage": 30,
